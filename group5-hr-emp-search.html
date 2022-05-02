@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Name: Jason Lee
+		Filename:group5-hr-emp-search.html 
+    Blackboard User Name: jslee3
+    Class Section: CTI.110.0003
+    Purpose: --> 
+        <link href="group5-hr-style.css" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Employee Search page</title>
+        <style>
+            a {
+                color: rgb(3, 2, 43);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transition: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="group5-hr-portal.html">Home</a>
+            <a href="group5-hr-fuel.html">Fuel</a>
+            <a href="group5-hr-job-title.html">Job Title</a>
+            <a href="group5-hr-emp-search.html">Employee Search</a>
+            <a href="group5-hr-choice.html">Department Finder</a>
+        </nav>
+        <h1>Employee Information</h1>
+        <h4>Search Employee using Last Name or ID Number</h4>
+        <br>
+        <form method="POST" action="group5-hr-emp-search.php">
+            <label for="last_name">Last name:</label>
+            <input type="search" id="last_name" name="last_name">
+            <label for="employee_id">Employee ID Number:</label>
+            <input type="search" id="employee_id" name="employee_id">
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+    </body>
+</html>
